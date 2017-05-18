@@ -1,0 +1,77 @@
+field y=100
+
+analog poz lv X2 lv X1
+binary Z1 1
+binary Z2 0
+analog temp lv T
+binary G 0
+binary M 0
+
+#1 len=50
+poz arc bot X1 0.5 ccav
+temp str bot bot
+
+#2 len=50
+poz str X1 X2 rng 0 0.5
+label Z1 2s
+
+#3 len=50
+Z1 0
+poz str X1 X2 rng 1 0.5
+label Z1 2s
+
+#2 len=30
+Z1 1
+
+poz arc X1 X2 0.6 ccav rng 0.5 0
+label Z1 <2s
+
+#4 len=50
+Z1 0
+G 1
+label G <5s
+poz arc X2 top 0.5 cvex
+temp arc bot T 0.75 ccav
+
+#5 len=80 
+G 0
+Z2 1
+M 1
+temp arc T top 0.5 cvex at 0.0
+temp arc top T 0.3 ccav at 0.3
+temp arc T bot 0.5 cvex at 0.7
+
+poz arc top X2 0.5 ccav at 0
+poz str X2 X1  at 0.5
+
+#1 len=60
+Z2 0
+Z1 1
+M 0
+poz arc X1 bot 0.5 cvex at 0.0
+poz arc bot X1 0.5 ccav at 0.5
+temp str bot bot
+
+#2 len=40
+poz str X1 X2
+label Z1 <2s
+
+#4 len=75
+Z1 0
+G 1
+poz arc X2 top 0.5 cvex
+temp arc bot T 0.75 ccav rng 0 0.2
+label G 5s
+
+#6
+G 0
+Z2 1
+poz arc top X2 0.5 ccav at 0
+poz str X2 X1  at 0.5
+temp arc T bot 0.6 ccav rng 0.2 0
+
+#1 len=50 noline
+Z2 0
+Z1 1
+poz arc X1 bot 0.5 cvex at 0.0
+temp str bot bot

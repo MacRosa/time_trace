@@ -1,0 +1,42 @@
+Cechy: case_sensitive.
+
+<pole_wymagane> [pole_opcjonalne]
+
+field [arguments] 
+
+Ustawianie atrybutów pola. Brak wypełnienia oznacza domyślne atrybuty. Można zadeklarować tylko raz, w pierwszej linijce kodu:
+width - szerokość
+height - wysokość
+space - przestrzeń między polami
+x, y - początek rysowania przebiegu
+len - długość przebiegu
+
+
+analog <nazwa> [lv <nazwa_poz>] [lv <nazwa_poz2>] ...
+Przebieg analogowy oraz deklaracja dodatkowych poziomów.
+
+binary <nazwa> <wartosc_poczatkowa>
+Przebieg binarny.
+
+#<numer_stanu> [len=<dlugosc>] [nonumber] [noline]
+Stan przebiegu, len to jego długość, nonumber pomija oznaczenie numeru, noline pomija linię oddzielającą stany.
+
+Funkcje przebiegu binarnego:
+<nazwa_przebiegu> <wartosc>
+Ustawianie wartości (1 lub 0) dla przebiegu.
+<nazwa_przebiegu> <wartosc> at <miejsce>
+Ustawienie wartości (1 lub 0) dla przebiegu w podanym miejscu (wartość zmiennoprzecinkowa od 0 do 1, gdzie 0 to początek, a 1 to koniec linii)
+
+Funkcje przebiegu analogowego:
+<nazwa_przebiegu> str <początek> <koniec> [rng <początek> <koniec>] [at <miejsce>]
+Ustawienie wartości przebiegu jako prostej linii, gdzie początek to poziom początkowy a koniec to końcowy poziom. Dodano także top, czyli szczyt przebiegu i bot, czyli koniec przebiegu. Słowo rng oznacza przedział procentowy między poziomami. Zmienna początek to procent odstępu od początkowego poziomu, koniec to procent odstępu od końcowego poziomu.
+
+<nazwa_przebiegu> arc <początek> <koniec> <zakrzywienie> <kąt> [rng <początek> <koniec>] [at <miejsce>]
+Ustawienie wartości przebiegu jako łuku, gdzie początek to poziom początkowy a koniec to końcowy poziom, zakrzywienie to liczba zmiennoprzecinkowa od 0 do 1 określająca stopień zakrzywienia a kąt pokazuje, czy zakrzywienie będzie wypukłe(cvex), czy wklęsłe(ccav).
+Zmienna początek to procent odstępu od początkowego poziomu, koniec to procent odstępu od końcowego poziomu.
+
+Słowo kluczowe at oznacza, że przebieg zacznie być wykonywana w danym miejscu (wartość zmiennoprzecinkowa od 0 do 1, gdzie 0 to początek, a 1 to koniec linii).
+
+label <nazwa_przebiegu> <etykieta>
+Ustawienie etykiety dla podanego przebiegu dyskretnego.
+

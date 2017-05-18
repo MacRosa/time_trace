@@ -1,0 +1,4 @@
+1. Sprawdzenie czy wszystko działa razem.
+2. Dodanie subsfaz do obu klas.
+3. Dodanie timerów.
+

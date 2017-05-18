@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<BorderPane fx:id="mainPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.ross.timetrace.Controller">
+    <top>
+        <MenuBar>
+            <Menu text="Menu">
+                <MenuItem text="Zapisz" onAction="#save"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane >
+            <SplitPane fx:id="canvasPane" dividerPositions="0.4, 0.5" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane>
+                    <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <center>
+                            <TextArea fx:id="textArea"/>
+                        </center>
+                        <bottom>
+                            <Button mnemonicParsing="false" text="Wykonaj" BorderPane.alignment="CENTER" onAction="#run" />
+                        </bottom>
+                    </BorderPane>
+                </AnchorPane>
+                <AnchorPane >
+                    <ScrollPane fx:id="scrollPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane>
+                            <Canvas fx:id="canvas" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        </AnchorPane>
+                    </ScrollPane>
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </center>
+</BorderPane>
+

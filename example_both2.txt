@@ -1,0 +1,37 @@
+field width=1000 height=600 space=50 x=50 y=100 len=600
+
+analog poz lv X1 lv X2
+binary Z1 1
+binary Z2 0
+binary Z3 0
+
+#1 len=100
+poz arc bot X2 0.5 ccav at 0.0
+poz str X2 X1 at 0.5
+
+#2
+poz arc X1 top 0.5 cvex at 0.0
+poz arc top X1 0.5 ccav at 0.3
+poz str X1 X2 at 0.6
+Z1 0
+Z3 1
+
+#3 
+poz arc X2 bot 0.5 cvex at 0.0
+poz arc bot X2 0.5 ccav at 0.3
+poz str  X2 X1 at 0.6
+
+Z2 1
+Z3 0
+
+#4
+poz arc X1 top 0.5 cvex at 0.0
+poz arc top X1 0.5 ccav at 0.3
+poz str X1 X2 at 0.6
+Z2 0
+Z3 1
+
+#1 noline len=100
+poz arc X2 bot 0.25 cvex
+Z1 1
+Z3 0

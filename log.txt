@@ -1,0 +1,104 @@
+﻿16:12 4 maja 2017: no z racji tego, że kijowe jest rysowanie w paincie, jestem sam zmuszony napisać program do rysowania przebiegów.
+16:20 4 maja 2017: stworzyłem projekt, teraz robię layout.
+16:42 4 maja 2017: nno nie jest to łatwe. Muszę też przenieść mój skrypt w pytonie do logów.
+16:58 4 maja 2017: pierwsze budowanie.
+18:16 4 maja 2017: nie chce rysować.
+18:44 4 maja 2017: coś nie mogę się domyślić, skąd wziąć szerokość w panelu.
+18:47 4 maja 2017: nieistotnie.
+Edit 19:04 Czw 4 maja 2017: no i działa skrypt.
+Edit 20:07 Czw 4 maja 2017: czas napisać przykładowe rysowanie.
+Edit 20:07 Czw 4 maja 2017: najpierw dyskretne wartości.
+Edit 20:15 Czw 4 maja 2017: rysuję linię.
+Edit 20:19 Czw 4 maja 2017: widzę, jak to ma wyglądać.
+Edit 20:59 Czw 4 maja 2017: męczę się z tym trochę, ale znajdę rozwiązanie.
+Edit 21:21 Czw 4 maja 2017: dodałem stany, czas na dodanie czegoś nowego.
+Edit 9:33 Pt 5 maja 2017: dodaję rysowanie stanu na dole.
+Edit 9:56 Pt 5 maja 2017: dodaję rysowanie wielu przebiegów w stanie.
+Edit 10:01 Pt 5 maja 2017: Wyrysuję linię między stanami.
+Edit 10:24 Pt 5 maja 2017: no i teraz działa kilka stanów.
+Edit 10:25 Pt 5 maja 2017: czas na przebieg analogowy, nieco trudniejszy do wykonania.
+Edit 11:22 Pt 5 maja 2017: tworzę poziomy.
+Edit 11:36 Pt 5 maja 2017: teraz czas na rysowanie kresek dla poziomów.
+Edit 11:55 Pt 5 maja 2017: musiałem dodać zmienny poziom dla stanów analogowych, bo nie mieściły się tak do końca.
+Edit 12:03 Pt 5 maja 2017: mam idealny wykres do teraźniejszych możliwości programu. Klawisz i dioda.
+Edit 12:21 Pt 5 maja 2017: działa po małych dodatkach do funkcji.
+Edit 12:34 Pt 5 maja 2017: teraz zarządzanie poziomem.
+Edit 14:13 Pt 5 maja 2017: muszę uniezależnić dyskretne zmiany od czcionki.
+Edit 14:53 Pt 5 maja 2017: teraz myślę nad łukami. Są dość ciężkie do ogarnięcia.
+Edit 15:18 Pt 5 maja 2017: teraz chyba łapię. Arcy są takie jak w tych zaokrąglonych kwadratach.
+Edit 15:27 Pt 5 maja 2017: rozumiem, teraz jednak chciałbym zmienić analogi w taki sposób, by linie poziomów były rysowane tylko raz.
+Edit 15:35 Pt 5 maja 2017: dobra, mam to. Teraz te łuki.
+Edit 15:43 Pt 5 maja 2017: musiałem jeszcze poprawić top i bottom dla normalnych.
+Edit 16:29 Pt 5 maja 2017: muszę zrobić intersekcję stanu, w przypadku gdy pewne wejście lub wyjście zmienia się jeszcze podczas stanu. Bo te łuki działają całkiem nieźle.
+Edit 16:52 Pt 5 maja 2017: zrobię jeszcze tzw trajektorię, czyli czy będzie malało bardziej z początku, czy bardziej z końca.
+Edit 17:41 Pt 5 maja 2017: trajektoria zrobiona i dostosowana, czas na sprawdzenie, jak będzie wyglądać przebieg dyskretny i przebieg ciągły razem.
+Edit 17:54 Pt 5 maja 2017: dodałbym klasę pośrednią między stanem a przebiegami, przechowującą elementy przebiegu oraz rozmieszczającą je w odpowiednich miejscach.
+Edit 18:01 Pt 5 maja 2017: timestatus wystarczyłby jeden. Będzie on miał jedynie zmieniany numerek.
+Edit 18:08 Pt 5 maja 2017: wygląda na całkiem działające.
+Edit 18:12 Pt 5 maja 2017: najpierw podfazy w dyskretnym.
+Edit 19:00 Pt 5 maja 2017: testy zmiany dyskretnego.
+Edit 19:08 Pt 5 maja 2017: działa wszystko po pewnych poprawkach.
+Edit 19:08 Pt 5 maja 2017: zapomniałem do analogowych przebiegów dodać pewnych wartości pomiędzy poziomami.
+Edit 20:36 Pt 5 maja 2017: teraz zajmę się międzyfazami dla przebiegu analogowego.
+Edit 21:03 Pt 5 maja 2017: w sumie narazie skopiowałem rozwiązanie z dyskretnego. Okazuje się, niemal wszystko kopiuj-wklej.
+Edit 21:06 Pt 5 maja 2017: pierwsze testy skopiowanego rozwiązania.
+Edit 21:14 Pt 5 maja 2017: działa. Zrobię jeszcze test szczytu.
+Edit 21:17 Pt 5 maja 2017: no i ślicznie to działa.
+Edit 21:23 Pt 5 maja 2017: zrobiłem jeszcze snapshota. Ładnie dość rysuje wszystko. Jutro jeszcze timery dodać tekstowe, ewentualnie dodatkowe usprawnienia do klas i drobny interpretowany język.
+Edit 7:35 Sob 6 maja 2017: dodam tą klasę kontenera, którą wspominałem wczoraj.
+Edit 7:52 Sob 6 maja 2017: kontener dodany, nawet to działa. Czas dodać jeszcze te timery. To będzie raczej.
+Edit 8:13 Sob 6 maja 2017: ale najpierw test rozwiązania na prawdziwym przebiegu.
+Edit 8:43 Sob 6 maja 2017: no to całkiem fajnie działa. Ale teraz ten timer.
+Edit 8:58 Sob 6 maja 2017: powstawiałem tam te etykiety.
+Edit 12:54 Sob 6 maja 2017: teraz zastanawiam się nad językiem skryptowania, narazie jego składnią.
+Edit 13:16 Sob 6 maja 2017: równocześnie zajmuję się prostym skryptem dla prostych przebiegów.
+Edit 13:18 Sob 6 maja 2017: mam już chyba składnię. Czas na prosty kod a później pisanie interpretera.
+Edit 14:00 Sob 6 maja 2017: teraz piszę interpreter.
+Edit 14:57 Sob 6 maja 2017: zrobiłem inicjowanie pola w interpreterze. Czas na dodanie przebiegów.
+Edit 15:06 Sob 6 maja 2017: narazie dodanie przebiegów binarnych.
+Edit 15:38 Sob 6 maja 2017: mam prosty interpreter, czas go przetestować na moim dość prostym skrypcie.
+Edit 15:43 Sob 6 maja 2017: no działa... nie do końca tak, jak zakładałem.
+Edit 17:16 Sob 6 maja 2017: po kilku zmianach działa całkiem nieźle.
+Edit 17:24 Sob 6 maja 2017: dobra, jeszcze wprowadziłem kilka usprawnień i działa.
+Edit 17:30 Sob 6 maja 2017: teraz wprowadzenie dodatkowo binarnych pomiędzy.
+Edit 17:43 Sob 6 maja 2017: dobra, działa całkiem nieźle.
+Edit 17:44 Sob 6 maja 2017: użyje teraz plików źródłowych zamiast wklepanego na sztywno stringa.
+Edit 18:01 Sob 6 maja 2017: wszystko działa... przy założeniu, że plik jest w formacie utf-8. Uniwersalnym kodowaniem plików zajmę się jednak nieco później.
+Edit 18:53 Sob 6 maja 2017: uzupełniłem deklaracje języka o funkcję rysowania liny.
+Edit 18:55 Sob 6 maja 2017: dodaję jeszcze długość przebiegu, ponieważ maszyna interpretuje linijka po linijce i nie wie, jaka dokładnie będzie długość przebiegu.
+Edit 18:57 Sob 6 maja 2017: najpierw może dodam tę dodatkową zmienną długości.
+Edit 18:59 Sob 6 maja 2017: delikatna zmiana. Czas na wprowadzenie deklaracji przebiegów analogowych.
+Edit 19:15 Sob 6 maja 2017: skończyłem dodawanie, czas na ustawianie.
+Edit 19:23 Sob 6 maja 2017: teraz sprawdzam, czy wszystko jest na miejscu.
+Edit 19:27 Sob 6 maja 2017: zapomniałem o dodaniu do głównego kontenera.
+Edit 19:31 Sob 6 maja 2017: teraz muszę ustandaryzować łuki.
+Edit 19:45 Sob 6 maja 2017: zmieniłem nazwy kilku istotnych zmiennych.
+Edit 20:28 Sob 6 maja 2017: dodaję łuki do implementacji.
+Edit 20:38 Sob 6 maja 2017: łuki działają. Do tych obu trzeba jeszcze dodać procentowe początki i końce przedziałów.
+Edit 20:57 Sob 6 maja 2017: procenty przedziałów dodane, mniej więcej wygląda to okej.
+Edit 20:57 Sob 6 maja 2017: czas na przedziały dla łuków.
+Edit 21:02 Sob 6 maja 2017: przedziały dla łuków zrobione, czas na interpretację at dla przebiegów analogowych.
+Edit 21:06 Sob 6 maja 2017: przykład zrobiony, czas na jego rozwinięcie w interpreterze.
+Edit 21:13 Sob 6 maja 2017: zrobione dla prostych, teraz interpretacja dla przedziałowych prostych.
+Edit 21:20 Sob 6 maja 2017: czas na łuki.
+Edit 21:29 Sob 6 maja 2017: czas na łuk przedziałowy.
+Edit 21:37 Sob 6 maja 2017: no i chyba działa. Czas na etykiety.
+Edit 21:55 Sob 6 maja 2017: etykiety są przypisane. Muszę sobie zrobić przerwę...
+Edit 22:24 Sob 6 maja 2017: test obu typów przebiegów naraz.
+Edit 22:32 Sob 6 maja 2017: zrobiłem przykładowy przebieg. Czas na test niemal generalny.
+Edit 22:36 Sob 6 maja 2017: musiałem zmienić nazwę całej klasy Discrete na Binary. Ciężko zmienia się coś, co po prostu było już niemal od początku.
+Edit 22:42 Sob 6 maja 2017: ale wszystko działa i armaci. To teraz interpretacja z fielda co leży po lewej.
+Edit 22:56 Sob 6 maja 2017: teraz test tego pola po lewej.
+Edit 23:09 Sob 6 maja 2017: wszystko działa tak jak się spodziewałem.
+Edit 23:12 Sob 6 maja 2017: tylko mała poprawka.
+Edit 23:38 Sob 6 maja 2017: dodałem zapisywanie do pliku. Najs, zrobione.
+Edit 23:39 Sob 6 maja 2017: poprawiłbym może ten łuk.
+Edit 11:22 Śr 10 maja 2017: testy beziera.
+Edit 11:40 Śr 10 maja 2017: działa to zaskakująco dobrze.
+Edit 17:43 Śr 10 maja 2017: zaczynam wdrażać jakieś zastosowanie.
+Edit 19:53 Czw 11 maja 2017: właściwie to zacząłem myśleć o algorytmie podobnym do tego, co był w poprzednim zastosowaniu. Już chyba mam gotowy do wdrożenia do programu.
+Edit 19:56 Czw 11 maja 2017: wszystko jest w porządku, tylko krzywe nie są tak zaokrąglone jak w zastosowaniu arca. Ale, tutaj może już coś innego wymyślę.
+Edit 20:31 Czw 11 maja 2017: przebudowałem rozwiązanie.
+Edit 21:38 Czw 11 maja 2017: nowe rozwiązanie nie chce działać poprawnie.
+Edit 12:46 Pt 12 maja 2017: muszę sprawdzić czy nie mylą trochę przekazane argumenty.
+Edit 13:18 Pt 12 maja 2017: rysuje, może nie takie gładkie krzywe, ale rysuje.

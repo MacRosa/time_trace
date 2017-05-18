@@ -1,0 +1,11 @@
+field width=1000 height=600 space=50 x=50 y=100 len=500
+
+analog poz lv X1 lv X2
+
+#1 len=100
+poz str bot X2 at 0.0
+poz str X2 bot at 0.5
+
+#2 len=100
+poz str X2 X1 rng 0 0.5 at 0 
+poz str X2 X1 rng 0.75 0 at 0.5 

@@ -1,0 +1,25 @@
+field width=1000 height=600 space=50 x=50 y=100
+
+
+binary KL 0
+binary LD 0
+
+#1 len=100
+label KL <3s
+
+#2 len=100
+KL 1
+label KL 5s
+label LD 23s
+
+#3 len=100
+KL 0
+LD 1
+
+#4 len=100
+KL 1
+LD 1
+
+#1 len=100 noline
+KL 0
+LD 0
